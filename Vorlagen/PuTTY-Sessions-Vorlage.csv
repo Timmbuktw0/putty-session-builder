@@ -1,0 +1,2 @@
+﻿"Anzeigename";"Hostname/IP";"Port";"Font";"Fontvariante";"Fontgröße";"Fontquality";"Keepalive";"Keepalive Rate";"Autologin Username";"X11 Forwarding";"Protokoll";"TCP Keepalive";"X11 Display";"SSH Keyfile";"Scrollback"
+"BEISPIEL - wird übersprungen";"192.0.2.10";"22";"Consolas";"Normal";"11";"ClearType";"TRUE";"5";"admin";"FALSE";"ssh";"FALSE";"localhost:0";"";"2000"

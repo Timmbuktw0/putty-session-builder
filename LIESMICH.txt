@@ -1,0 +1,32 @@
+﻿PuTTY Session Builder 1.0.0
+==========================
+
+1. ZIP komplett entpacken.
+2. PuTTYSessionBuilder.exe starten (ohne Administratorrechte).
+3. XLSX- oder CSV-Vorlage aus dem Ordner Vorlagen kopieren und ausfüllen.
+   Zeile 1: Überschriften.
+   Zeile 2: Beispiel, wird IMMER übersprungen. Bitte stehen lassen.
+   Eigene Sessions AB ZEILE 3 eintragen.
+4. Datei laden -> Prüfen -> Sessions importieren.
+5. PuTTY neu öffnen.
+
+Alle gewünschten Felder sind enthalten, zusätzlich Protokoll, TCP Keepalive,
+X11 Display, SSH Keyfile und Scrollback.
+Keepalive Rate: Sekunden, Standard 5.
+
+CSV, XLS und XLSX werden ohne Office gelesen. Für Dropdowns die XLSX-Vorlage
+oder die editierbare Tabelle des Programms verwenden.
+Voraussetzung: Windows 10/11 mit .NET Framework 4.8.
+
+Ziel: HKCU\Software\SimonTatham\PuTTY\Sessions
+Vorhandene Sessions werden standardmäßig übersprungen. Aktualisierung ist
+per Checkbox möglich. Vor dem direkten Import entsteht eine REG-Sicherung
+unter %LOCALAPPDATA%\PuTTYSessionBuilder\Backups.
+
+Die ausführliche Anleitung steht in Anleitung.html.
+EXE und ExcelDataReader.dll zusammen im entpackten Ordner belassen.
+Das Programm ist nicht digital signiert.
+
+Source enthält Quellcode, Build.cmd und Test.cmd.
+Der Stand wurde kompiliert und unter Mono in einer Linux-Testumgebung
+geprüft. Ein Lauf unter echtem Windows/PuTTY wurde hier nicht durchgeführt.
